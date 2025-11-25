@@ -26,14 +26,14 @@ public abstract class Pet {
     protected abstract String reportDetails();
 
 
-    //overloading example - it's my addition
-    public String describe() {
-        return String.format("%s (%s, %d)", name, species, age);//return short format
-    }
-    public String describe(boolean verbose) {
-        return verbose
-                ? String.format("Pet{name='%s', age=%d, species='%s'}", name, age, species)//if true return long format if false call the function of the short format
-                : describe();
-    }
+//    //overloading example - it's my addition
+//    public String describe() {
+//        return String.format("%s (%s, %d)", name, species, age);//return short format
+//    }
+//    public String describe(boolean verbose) {
+//        return verbose
+//                ? String.format("Pet{name='%s', age=%d, species='%s'}", name, age, species)//if true return long format if false call the function of the short format
+//                : describe();
+//    }
 
 }
